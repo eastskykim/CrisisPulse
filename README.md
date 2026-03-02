@@ -1,4 +1,4 @@
-# Incremental BERTopic Brand Crisis Detection
+# CrisisPulse: Incremental BERTopic Brand Crisis Detection
 
 Incremental BERTopic Brand Crisis Detection is a script-first, reproducible NLP pipeline for tracking evolving risk signals in brand-related social data. The project combines GPU-accelerated topic modeling with staged model fitting (baseline, delta, merge), semantic drift monitoring, and optional local LLM-based topic labeling.
 
