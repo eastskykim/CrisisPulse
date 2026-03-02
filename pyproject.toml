@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "incremental-bertopic-brand-crisis-detection"
+version = "0.1.0"
+description = "Incremental BERTopic pipeline for brand crisis detection"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scipy>=1.11",
+  "scikit-learn>=1.4",
+  "PyYAML>=6.0",
+  "emoji>=2.0",
+  "gensim>=4.3",
+  "sentence-transformers>=3.0",
+  "bertopic>=0.17",
+  "optuna>=3.6",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.7",
+  "black>=24.0",
+  "pre-commit>=3.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E402", "E501", "I001", "UP006", "UP035", "B905"]

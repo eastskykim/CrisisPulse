@@ -1,0 +1,17 @@
+paths:
+  project_root: .
+  data_dir: data
+  artifacts_dir: artifacts
+  models_dir: models
+
+embedding:
+  model_name: intfloat/e5-base-v2
+  batch_size: 1024
+  max_seq_length: 128
+  normalize_embeddings: true
+  prefix: "passage: "
+
+pipeline:
+  random_seed: 42
+  min_tokens: 5
+  outlier_reduce_threshold: 0.875

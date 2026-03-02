@@ -1,0 +1,38 @@
+name: rapids-25.10
+channels:
+  - rapidsai
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - rapids=25.10
+  - cuda-version>=12.0,<=12.9
+  - pytorch=*=*cuda*
+  - cudatoolkit
+  - cupy
+  - cudf
+  - cuml
+  - cugraph
+
+  # NLP + Topic Modeling
+  - sentence-transformers
+  - spacy
+  - emoji
+  - gensim
+  - bertopic
+
+  # Jupyter (optional)
+  - jupyterlab
+  - ipywidgets
+  - jupyterlab_execute_time
+
+  # Optimization
+  - optuna
+
+  # pip section (if needed)
+  - pip
+  - pip:
+      # spaCy model (pip-installable)
+      - https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz

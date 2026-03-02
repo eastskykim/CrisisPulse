@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local configs
+.env
+
+# Local data/artifacts/models
+data/*.csv
+data/*.parquet
+data/raw/*.json
+artifacts/
+models/
+
+# Keep representative model metadata if needed, but ignore large binaries
+*.gguf
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
