@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import argparse
 
-from incremental_bertopic_brand_crisis_detection.config import load_config
-from incremental_bertopic_brand_crisis_detection.embeddings.e5 import (
+from crisispulse.config import load_config
+from crisispulse.embeddings.e5 import (
     encode_and_save,
     load_embedding_model,
 )

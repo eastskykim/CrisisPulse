@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from incremental_bertopic_brand_crisis_detection.topic_model.compat import (
+from crisispulse.topic_model.compat import (
     ensure_llama_cpp_importable,
 )
 

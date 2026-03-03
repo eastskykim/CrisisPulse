@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "incremental-bertopic-brand-crisis-detection"
+name = "crisispulse"
 version = "0.1.0"
 description = "Incremental BERTopic pipeline for brand crisis detection"
 readme = "README.md"

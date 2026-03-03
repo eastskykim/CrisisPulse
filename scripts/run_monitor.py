@@ -6,8 +6,8 @@ import pickle
 import numpy as np
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.config import load_config
-from incremental_bertopic_brand_crisis_detection.monitoring.drift import (
+from crisispulse.config import load_config
+from crisispulse.monitoring.drift import (
     compute_negative_prevalence,
     compute_sentiment_distribution,
     compute_topic_distribution,

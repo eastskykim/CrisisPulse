@@ -4,8 +4,8 @@ import argparse
 
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.config import load_config
-from incremental_bertopic_brand_crisis_detection.data.preprocessing import (
+from crisispulse.config import load_config
+from crisispulse.data.preprocessing import (
     expand_nested_columns,
     load_brand_sources,
     prepare_df,

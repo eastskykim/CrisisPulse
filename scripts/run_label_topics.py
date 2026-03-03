@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.topic_model.labeling import (
+from crisispulse.topic_model.labeling import (
     label_topics_with_llama_cpp,
 )
 

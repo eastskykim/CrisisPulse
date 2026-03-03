@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.topic_model.analysis import (
+from crisispulse.topic_model.analysis import (
     compare_topic_distributions,
     select_top_new_topics,
     select_top_topic_changes,

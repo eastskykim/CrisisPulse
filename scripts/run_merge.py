@@ -7,13 +7,13 @@ import joblib
 import torch
 from sentence_transformers import SentenceTransformer
 
-from incremental_bertopic_brand_crisis_detection.config import load_config
-from incremental_bertopic_brand_crisis_detection.embeddings.e5 import load_docs_and_embeddings
-from incremental_bertopic_brand_crisis_detection.topic_model.compat import (
+from crisispulse.config import load_config
+from crisispulse.embeddings.e5 import load_docs_and_embeddings
+from crisispulse.topic_model.compat import (
     ensure_llama_cpp_importable,
 )
-from incremental_bertopic_brand_crisis_detection.topic_model.evaluate import default_stop_words
-from incremental_bertopic_brand_crisis_detection.topic_model.merge import (
+from crisispulse.topic_model.evaluate import default_stop_words
+from crisispulse.topic_model.merge import (
     _topic_cfg_from_best,
     build_merged_models,
     fit_slice_with_params,
@@ -21,7 +21,7 @@ from incremental_bertopic_brand_crisis_detection.topic_model.merge import (
     save_model_snapshots,
     tune_delta_on_valid,
 )
-from incremental_bertopic_brand_crisis_detection.topic_model.objective import TopicModelFactory
+from crisispulse.topic_model.objective import TopicModelFactory
 
 
 def parse_args() -> argparse.Namespace:

@@ -5,8 +5,8 @@ import argparse
 import numpy as np
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.config import load_config
-from incremental_bertopic_brand_crisis_detection.topic_model.compat import (
+from crisispulse.config import load_config
+from crisispulse.topic_model.compat import (
     ensure_llama_cpp_importable,
 )
 

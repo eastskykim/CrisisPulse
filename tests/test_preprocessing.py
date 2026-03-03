@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.data.preprocessing import clean_text, prepare_df
+from crisispulse.data.preprocessing import clean_text, prepare_df
 
 
 def test_clean_text_removes_rt_prefix() -> None:

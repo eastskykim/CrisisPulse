@@ -6,7 +6,7 @@ The workflow is designed for production-style iteration rather than notebook-onl
 
 ## What Changed
 
-- Added a proper Python package under `src/incremental_bertopic_brand_crisis_detection/`
+- Added a proper Python package under `src/crisispulse/`
 - Added pipeline scripts under `scripts/`
 - Added central config in `configs/base.yaml`
 - Added packaging metadata in `pyproject.toml`
@@ -15,7 +15,7 @@ The workflow is designed for production-style iteration rather than notebook-onl
 ## Repository Layout
 
 ```text
-incremental-bertopic-brand-crisis-detection/
+crisispulse/
 ├─ configs/
 │  └─ base.yaml
 ├─ scripts/
@@ -31,7 +31,7 @@ incremental-bertopic-brand-crisis-detection/
 │  ├─ run_monitor_report.py
 │  └─ run_label_topics.py
 ├─ src/
-│  └─ incremental_bertopic_brand_crisis_detection/
+│  └─ crisispulse/
 │     ├─ config.py
 │     ├─ data/preprocessing.py
 │     ├─ embeddings/e5.py
@@ -187,7 +187,7 @@ This step uses cache-based labeling to avoid recomputing labels for unchanged to
 ## Notebook Strategy
 
 The repository is script-first for reproducibility. If you use notebooks for exploration,
-keep them thin and import reusable logic from `src/incremental_bertopic_brand_crisis_detection/`.
+keep them thin and import reusable logic from `src/crisispulse/`.
 
 ## Data and Artifact Policy
 

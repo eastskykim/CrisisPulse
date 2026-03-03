@@ -6,10 +6,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.monitoring.drift import (
+from crisispulse.monitoring.drift import (
     compute_topic_distribution,
 )
-from incremental_bertopic_brand_crisis_detection.monitoring.report import (
+from crisispulse.monitoring.report import (
     build_hybrid_alert_table,
     plot_jsd_trajectory,
 )

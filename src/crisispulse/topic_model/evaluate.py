@@ -9,7 +9,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.topic_model.compat import (
+from crisispulse.topic_model.compat import (
     ensure_llama_cpp_importable,
 )
 
@@ -19,7 +19,7 @@ from bertopic import BERTopic
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 from sklearn.metrics.pairwise import cosine_similarity
 
-from incremental_bertopic_brand_crisis_detection.topic_model.metrics import (
+from crisispulse.topic_model.metrics import (
     coherence_cv,
     compute_score_j,
     get_top_words,
@@ -27,7 +27,7 @@ from incremental_bertopic_brand_crisis_detection.topic_model.metrics import (
     redundancy_jaccard,
     topic_diversity,
 )
-from incremental_bertopic_brand_crisis_detection.topic_model.objective import (
+from crisispulse.topic_model.objective import (
     TopicModelConfig,
     TopicModelFactory,
 )

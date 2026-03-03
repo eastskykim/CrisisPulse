@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from incremental_bertopic_brand_crisis_detection.topic_model.analysis import (
+from crisispulse.topic_model.analysis import (
     compare_topic_distributions,
     summarize_topic_stability_filtered,
 )

@@ -4,7 +4,7 @@ This project started as a notebook-first workflow. The first engineering pass no
 
 ## Phase 1 (Completed)
 
-- Package scaffold under `src/incremental_bertopic_brand_crisis_detection`
+- Package scaffold under `src/crisispulse`
 - Data preprocessing module extracted from notebook
 - Embedding module extracted from notebook
 - Topic-model metric and factory modules extracted from notebook
@@ -14,8 +14,8 @@ This project started as a notebook-first workflow. The first engineering pass no
 ## Phase 2 (Recommended Next)
 
 - Move remaining model-evaluation and merge logic from `main.ipynb` into:
-  - `src/incremental_bertopic_brand_crisis_detection/topic_model/evaluate.py` (completed)
-  - `src/incremental_bertopic_brand_crisis_detection/topic_model/merge.py` (completed)
+  - `src/crisispulse/topic_model/evaluate.py` (completed)
+  - `src/crisispulse/topic_model/merge.py` (completed)
 - Add `scripts/run_eval.py` and `scripts/run_merge.py` (completed)
 - Replace notebook direct function definitions with module imports (in progress)
 
